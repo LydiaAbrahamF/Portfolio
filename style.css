@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   overflow-x: hidden; 
+   scroll-behavior: smooth;
+  
+}
+.row{
+  padding:1%;
+}
+.column{
+  flex: 50%;
+}
+.left {
+  width: 75%;
+  margin: 10px;
+}
+.right{
+  width: 25%;
+  margin: 50px;
+}
+.row{
+  display: flex;
+}
+#aboutconent{
+  margin-top: -300px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-top: 0%;
+  text-align: left;
+  margin-left: 0%;
+  font-size: x-large;
+  font-weight: 350;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#aboutpic{
+  max-width: 40%;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 0.1%;
+  margin-top: 0%;
+}
+#home1{
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom:50px;
+  font-size: x-large;
+  font-weight: 350;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+#aboutme{
+  margin-right: 10%;
+}
+#home2{
+  margin-top: -60px;
+  margin-bottom: -60px;
+  text-align: left;
+
+}
+#home{
+  size: 1cm;
+  margin-top: 10%;
+  margin-bottom: 150px;
+  margin-left: 10%;
+  align-content: center;
+}
+#about{
+  padding-top: 2%;
+  margin-top:20%;
+  margin-bottom: 50px;
+}
+#experience{
+  padding-top: 2%;
+  margin-top:20%;
+  margin-bottom: 50px;
+}
+#portifolio{
+  padding-top: 2%;
+  margin-top:20%;
+  margin-bottom: 50px;
+}
+
+#logo{
+  max-width: 20%;
+  height: auto;
+  margin-right: auto;
+  margin-top: auto;
+  size: 5%;
+}
+#duo{
+  size: 1%;
+  max-width: 15%;
+  height: auto;
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 10%;
+}
+.my-5{
+  margin-top: 5%;
+}
+.mb-4{
+  margin-left: 20%;
+  size:auto;
+
+}
+#contacts{
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+.btn-primary {
+  background-color: rgb(221, 221, 253);
+  border-color: rgb(93, 93, 245);
+} 
+
+.About {
+  padding: 0;
+  margin: 0;
+
+
+}
+
+
+
