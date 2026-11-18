@@ -16,6 +16,7 @@
     <div class="wrap nav-inner">
       <a class="brand" href="#top">Lydia Abraham</a>
       <nav aria-label="Main">
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
@@ -29,7 +30,7 @@
       <div class="hero-text">
         <p class="eyebrow">ML Researcher · Barcelona</p>
         <h1>Lydia Abraham</h1>
-        <p class="lede">I build and evaluate machine learning systems for computer vision, security and health data. I have an electrical engineering background and 2+ years across research and industry. I'm currently doing an MSc at Universitat Autònoma de Barcelona.</p>
+        <p class="lede">I'm a machine learning researcher focused on computer vision and deep learning, from small-object detection in drone imagery to lung nodule analysis in CT scans. I have an electrical engineering background and 2+ years of combined research and industry experience, and I'm now doing an MSc at Universitat Autònoma de Barcelona.</p>
         <div class="actions">
           <a class="btn btn-solid" href="Lydia_Abraham_CV.pdf" target="_blank" rel="noopener">Download CV</a>
           <a class="btn" href="mailto:lydiafirew00@gmail.com">Email</a>
@@ -47,19 +48,28 @@
       </figure>
     </section>
 
+    <section id="about" class="wrap section">
+      <h2><span class="idx">01</span>About</h2>
+      <div class="about">
+        <p>I trained as an electrical engineer at Addis Ababa Science and Technology University, then moved into machine learning research at KFUPM in Saudi Arabia. There I worked on small-object detection for maritime search and rescue and on detecting malicious network traffic.</p>
+        <p>What I care about most is making models that hold up outside the lab: on noisy real-world images, on shifted data, and on limited hardware. I'm especially interested in deploying AI in resource-constrained environments, and I plan to continue into doctoral research.</p>
+        <p>Before research, I spent about a year and a half in industry in data roles. That taught me to start from the business question and to explain results to people who don't read code.</p>
+      </div>
+    </section>
+
     <section id="research" class="wrap section">
-      <h2><span class="idx">01</span>Research &amp; projects</h2>
+      <h2><span class="idx">02</span>Research &amp; projects</h2>
       <div class="cards">
         <article class="card">
           <p class="tag">Computer vision</p>
           <h3>ALT-YOLO: altitude-conditioned small object detection</h3>
-          <p>Maritime search and rescue from UAVs. I evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2. I also proposed altitude-conditioned SAHI inference and glare-aware HSV/CLAHE preprocessing for small targets in open water.</p>
+          <p>Detecting people and boats in drone footage for maritime search and rescue. I evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2, and proposed altitude-conditioned SAHI inference and glare-aware HSV/CLAHE preprocessing for small targets in open water.</p>
           <p class="meta">PyTorch · YOLO · SAHI · KFUPM, 2026</p>
         </article>
         <article class="card">
-          <p class="tag">Network security · Co-authored paper</p>
+          <p class="tag">Network security · Co-authored research paper</p>
           <h3>Detecting QUIC-based command-and-control traffic</h3>
-          <p>An ML pipeline that pulls flow features out of packet captures with PyShark and benchmarks eight classifiers for spotting C2 traffic hidden in QUIC.</p>
+          <p>An ML pipeline that extracts flow features from packet captures with PyShark and benchmarks eight classifiers at spotting command-and-control traffic hidden in encrypted QUIC connections.</p>
           <p class="meta">Python · PyShark · scikit-learn · KFUPM, 2026</p>
         </article>
         <article class="card">
@@ -68,20 +78,28 @@
           <p>A reproducible pipeline on the LUNA dataset that classifies nodules as benign or malignant and localizes them as a secondary task. It comes with documented preprocessing, notebooks, source code and tests.</p>
           <p class="meta">Python · PyTorch · UAB, 2026</p>
         </article>
+        <article class="card">
+          <p class="tag">Federated learning · In progress</p>
+          <h3>Robust federated learning for lung nodule analysis</h3>
+          <p>Testing how well Byzantine-robust aggregation (Krum, Trimmed Mean) protects federated training on LUNA16 against poisoning attacks such as label flipping and sign flipping, with hospitals simulated as non-IID clients.</p>
+          <p class="meta">Python · PyTorch · UAB, 2026</p>
+        </article>
       </div>
+      <p class="more">Code for my projects is on <a href="https://github.com/LydiaAbrahamF" target="_blank" rel="noopener">GitHub</a>.</p>
 
       <details class="earlier">
         <summary>Earlier projects</summary>
         <ul>
-          <li><strong>Wall-E</strong>: robotics team project. I owned the computer vision and Raspberry Pi integration and swapped to motion sensors when we couldn't get a depth camera. <a href="https://drive.google.com/file/d/1I7f_pzTKMqTkZBuiLuDIFTKK4ASyjAS-/view?usp=sharing" target="_blank" rel="noopener">Demo</a></li>
-          <li><strong>Kegebrew</strong>: smart logistics for perishable produce, with a cooling unit for transport carts and a platform linking farmers to customers. <a href="https://sites.google.com/view/integrated-engineering-team-32/home?authuser=0" target="_blank" rel="noopener">Project site</a></li>
-          <li><strong>Sacure</strong>: a support chatbot for domestic-violence survivors, built at the African Agility Bootcamp (ML &amp; Data Science track).</li>
+          <li><strong>Wall-E</strong>: a five-person robotics project. I owned the computer vision and the Raspberry Pi integration, and we switched to motion sensors when no depth camera was available. <a href="https://drive.google.com/file/d/1I7f_pzTKMqTkZBuiLuDIFTKK4ASyjAS-/view?usp=sharing" target="_blank" rel="noopener">Demo</a></li>
+          <li><strong>Kegebrew</strong> ("from the farmer"): smart logistics for perishable produce such as tomatoes. It combined a cooling unit for carts and vehicles with a platform that connects farmers directly to customers. <a href="https://sites.google.com/view/integrated-engineering-team-32/home?authuser=0" target="_blank" rel="noopener">Project site</a></li>
+          <li><strong>Sacure</strong>: a chatbot offering psychological and legal guidance to survivors of domestic violence, built at the African Agility Bootcamp. On the ML &amp; Data Science track, I built the chatbot.</li>
+          <li><strong>Ethio Virtual Healthcare</strong> (BSc thesis): an AI diagnostic platform for eye and skin conditions, trained on a locally curated dataset.</li>
         </ul>
       </details>
     </section>
 
     <section id="experience" class="wrap section">
-      <h2><span class="idx">02</span>Experience</h2>
+      <h2><span class="idx">03</span>Experience</h2>
       <ol class="timeline">
         <li>
           <div class="when">Jan – Aug 2026</div>
@@ -125,16 +143,20 @@
     </section>
 
     <section id="skills" class="wrap section">
-      <h2><span class="idx">03</span>Skills</h2>
+      <h2><span class="idx">04</span>Skills</h2>
       <div class="skills">
-        <div><h3>ML &amp; research</h3><p>PyTorch, scikit-learn, NumPy, Pandas, computer vision (YOLO, SAHI), deep learning, federated learning, time-series analysis, RAG</p></div>
+        <div><h3>ML &amp; research</h3><p>PyTorch, scikit-learn, NumPy, Pandas, computer vision, deep learning, federated learning, time-series analysis</p></div>
         <div><h3>Programming</h3><p>Python, SQL, C++</p></div>
         <div><h3>Tools &amp; infrastructure</h3><p>Git, Linux, Docker, Paperspace Gradient, MATLAB</p></div>
         <div><h3>Data &amp; testing</h3><p>Power BI, Excel, unit / integration / E2E testing</p></div>
       </div>
 
-      <h3 class="sub">Leadership</h3>
-      <p class="lead-out"><strong>Lead, Google Developer Group on Campus, AASTU</strong> (Oct 2023 – Aug 2024). Secured $3,500+ in sponsorships, onboarded 15+ tech companies for recruiting, and ran AASTU Tech Fest for 1,200+ attendees.</p>
+      <h3 class="sub">Leadership &amp; community</h3>
+      <ul class="edu">
+        <li><strong>Lead, Google Developer Group on Campus, AASTU</strong> (Oct 2023 – Aug 2024): secured $3,500+ in sponsorships, onboarded 15+ tech companies for recruiting and networking, and ran AASTU Tech Fest for 1,200+ attendees.</li>
+        <li><strong>Rotaract Club</strong>: event organizing, partnership outreach and board responsibilities.</li>
+        <li><strong>Math tutor</strong> for school students for more than a year.</li>
+      </ul>
     </section>
   </main>
 

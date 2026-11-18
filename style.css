@@ -79,7 +79,7 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 .section h2 { font-size: 2rem; margin-bottom: 28px; }
 .sub { font-size: 1.1rem; margin: 40px 0 14px; }
 
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 14px;
   padding: 24px; display: flex; flex-direction: column;
@@ -177,3 +177,10 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
   html { scroll-behavior: auto; }
   .card, .card:hover { transition: none; transform: none; }
 }
+
+/* About */
+.about { max-width: 46em; color: #34404c; font-size: 1.05rem; }
+.about p { margin: 0 0 14px; break-inside: avoid; }
+.more { margin: 18px 0 0; color: var(--muted); }
+
+
