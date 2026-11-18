@@ -184,3 +184,5 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 .more { margin: 18px 0 0; color: var(--muted); }
 
 
+
+.card.wide { grid-column: 1 / -1; }

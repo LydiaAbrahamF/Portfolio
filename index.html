@@ -30,7 +30,7 @@
       <div class="hero-text">
         <p class="eyebrow">ML Researcher · Barcelona</p>
         <h1>Lydia Abraham</h1>
-        <p class="lede">I'm a machine learning researcher focused on computer vision and deep learning, from small-object detection in drone imagery to lung nodule analysis in CT scans. I have an electrical engineering background and 2+ years of combined research and industry experience, and I'm now doing an MSc at Universitat Autònoma de Barcelona.</p>
+        <p class="lede">I'm a machine learning researcher focused on computer vision and deep learning, from small-object detection in drone imagery to diagnosing skin and eye conditions from photos. I have an electrical engineering background and 2+ years of combined research and industry experience, and I'm now doing an MSc at Universitat Autònoma de Barcelona.</p>
         <div class="actions">
           <a class="btn btn-solid" href="Lydia_Abraham_CV.pdf" target="_blank" rel="noopener">Download CV</a>
           <a class="btn" href="mailto:lydiafirew00@gmail.com">Email</a>
@@ -39,7 +39,7 @@
         </div>
         <ul class="facts">
           <li><strong>Now</strong> MSc, Research &amp; Innovation in Computer-based Science and Engineering, UAB</li>
-          <li><strong>Before</strong> Junior Researcher, KFUPM, Saudi Arabia</li>
+          <li><strong>Before</strong> Research Intern, KFUPM, Saudi Arabia</li>
           <li><strong>Focus</strong> Computer vision · Deep learning · Research · Machine learning</li>
         </ul>
       </div>
@@ -61,24 +61,30 @@
       <h2><span class="idx">02</span>Research &amp; projects</h2>
       <div class="cards">
         <article class="card">
-          <p class="tag">Computer vision</p>
-          <h3>ALT-YOLO: altitude-conditioned small object detection</h3>
-          <p>Detecting people and boats in drone footage for maritime search and rescue. I evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2, and proposed altitude-conditioned SAHI inference and glare-aware HSV/CLAHE preprocessing for small targets in open water.</p>
-          <p class="meta">PyTorch · YOLO · SAHI · KFUPM, 2026</p>
+          <p class="tag">Computer vision · UAV imagery</p>
+          <h3>ALT-YOLO: altitude-conditioned inference for maritime search and rescue</h3>
+          <p>Detecting people and boats in drone footage. I evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2, and proposed altitude-conditioned SAHI inference and glare-aware HSV/CLAHE preprocessing. A per-altitude evaluation protocol showed a 23.5-point mAP@50 gap between medium- and high-altitude images, pointing to scale variation as the main bottleneck.</p>
+          <p class="meta">PyTorch · YOLO · SAHI · OpenCV · KFUPM, 2026</p>
         </article>
         <article class="card">
-          <p class="tag">Network security · Co-authored research paper</p>
-          <h3>Detecting QUIC-based command-and-control traffic</h3>
-          <p>An ML pipeline that extracts flow features from packet captures with PyShark and benchmarks eight classifiers at spotting command-and-control traffic hidden in encrypted QUIC connections.</p>
-          <p class="meta">Python · PyShark · scikit-learn · KFUPM, 2026</p>
+          <p class="tag">Medical imaging · BSc thesis</p>
+          <h3>Ethio Virtual Healthcare</h3>
+          <p>An end-to-end clinical decision support platform for rural health officers. CNN models reach 91.3% mean accuracy across 14 dermatology and ophthalmology classes, trained on a curated dataset of 5,000 images.</p>
+          <p class="meta">CNNs · Python · AASTU, 2024</p>
         </article>
         <article class="card">
-          <p class="tag">Medical imaging</p>
-          <h3>LUNA-Analysis: lung nodule classification and localization</h3>
-          <p>A reproducible pipeline on the LUNA dataset that classifies nodules as benign or malignant and localizes them as a secondary task. It comes with documented preprocessing, notebooks, source code and tests.</p>
-          <p class="meta">Python · PyTorch · UAB, 2026</p>
+          <p class="tag">Network security · Manuscript under review</p>
+          <h3>Statistical fingerprinting for QUIC-based C2 detection</h3>
+          <p>A four-VM testbed with two Merlin C2 configurations and a background-noise class, with flow fingerprints extracted via PyShark and strict time-based splits. Random Forest and XGBoost reach 94.7–94.8% accuracy on 4 classes. Noise-aware training cuts false-positive C2 alerts from 42% to under 3% while keeping recall at 96.6–97.8%.</p>
+          <p class="meta">Python · PyShark · XGBoost · with Shahad Alghamdi · KFUPM, 2026</p>
         </article>
         <article class="card">
+          <p class="tag">ML methodology</p>
+          <h3>Reassessing ensemble learning in software defect prediction</h3>
+          <p>A leakage-safe, nested cross-validation study comparing tree-based ensembles (RF, GB, XGBoost, CatBoost) with non-tree stacking across 10 public datasets. Tree-based stacking with a logistic-regression meta-learner gave the best MCC and PR-AUC, confirmed with Wilcoxon and Friedman/Nemenyi tests.</p>
+          <p class="meta">scikit-learn · XGBoost · CatBoost · with Haya Alsharef, Tania Sheila · KFUPM, 2026</p>
+        </article>
+        <article class="card wide">
           <p class="tag">Federated learning · In progress</p>
           <h3>Robust federated learning for lung nodule analysis</h3>
           <p>Testing how well Byzantine-robust aggregation (Krum, Trimmed Mean) protects federated training on LUNA16 against poisoning attacks such as label flipping and sign flipping, with hospitals simulated as non-IID clients.</p>
@@ -93,7 +99,6 @@
           <li><strong>Wall-E</strong>: a five-person robotics project. I owned the computer vision and the Raspberry Pi integration, and we switched to motion sensors when no depth camera was available. <a href="https://drive.google.com/file/d/1I7f_pzTKMqTkZBuiLuDIFTKK4ASyjAS-/view?usp=sharing" target="_blank" rel="noopener">Demo</a></li>
           <li><strong>Kegebrew</strong> ("from the farmer"): smart logistics for perishable produce such as tomatoes. It combined a cooling unit for carts and vehicles with a platform that connects farmers directly to customers. <a href="https://sites.google.com/view/integrated-engineering-team-32/home?authuser=0" target="_blank" rel="noopener">Project site</a></li>
           <li><strong>Sacure</strong>: a chatbot offering psychological and legal guidance to survivors of domestic violence, built at the African Agility Bootcamp. On the ML &amp; Data Science track, I built the chatbot.</li>
-          <li><strong>Ethio Virtual Healthcare</strong> (BSc thesis): an AI diagnostic platform for eye and skin conditions, trained on a locally curated dataset.</li>
         </ul>
       </details>
     </section>
@@ -104,9 +109,9 @@
         <li>
           <div class="when">Jan – Aug 2026</div>
           <div>
-            <h3>Junior Researcher</h3>
+            <h3>Research Intern (Computer Science)</h3>
             <p class="org">King Fahd University of Petroleum and Minerals · Dhahran, Saudi Arabia</p>
-            <p>Built ML pipelines for encrypted-traffic detection and small object detection, and ran reproducible GPU training experiments in PyTorch.</p>
+            <p>Conducted and co-authored applied ML studies in UAV object detection, encrypted-traffic detection and software defect prediction, with rigorous experimental design and statistical testing. Graduate coursework included Advanced Machine Learning, Advanced Computer Vision and Research Methodology &amp; Experiment Design.</p>
           </div>
         </li>
         <li>
@@ -114,7 +119,15 @@
           <div>
             <h3>Marketing Intelligence Officer</h3>
             <p class="org">East Africa National Distribution S.C. · Addis Ababa</p>
-            <p>Designed Power BI dashboards for C-level stakeholders and standardized metric definitions and data dictionaries across reporting.</p>
+            <p>Designed interactive Power BI dashboards for C-level stakeholders, formalized metric definitions and data dictionaries, and turned ambiguous business questions into structured analyses.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2024</div>
+          <div>
+            <h3>Research Participant, CIDTA Summer School</h3>
+            <p class="org">Carnegie Mellon University Africa · Kigali, Rwanda</p>
+            <p>Applied research on extending the post-harvest shelf life of tomatoes, using statistical analysis and structured experimental design for agricultural AI.</p>
           </div>
         </li>
         <li>
@@ -122,15 +135,7 @@
           <div>
             <h3>Junior Data Analyst</h3>
             <p class="org">Kaldi's Coffee · Addis Ababa</p>
-            <p>Used time-series demand analysis to find seasonal patterns behind a 48.8% revenue increase in the Ethiopian New Year product line. My process analysis led to an 8.23% cut in production costs.</p>
-          </div>
-        </li>
-        <li>
-          <div class="when">Earlier</div>
-          <div>
-            <h3>Software QA, back-end and analytics roles</h3>
-            <p class="org">ConsultNation · Kuraz Technologies · Awura Computing</p>
-            <p>Unit, integration and E2E testing; a Laravel e-commerce back end; and event operations reporting.</p>
+            <p>Used time-series demand analysis to find seasonal patterns behind a 48.8% revenue increase in the Ethiopian New Year product line. My process analysis led to an 8.23% cut in production costs. I also built KPI dashboards in Excel and Power BI.</p>
           </div>
         </li>
       </ol>
@@ -145,15 +150,16 @@
     <section id="skills" class="wrap section">
       <h2><span class="idx">04</span>Skills</h2>
       <div class="skills">
-        <div><h3>ML &amp; research</h3><p>PyTorch, scikit-learn, NumPy, Pandas, computer vision, deep learning, federated learning, time-series analysis</p></div>
-        <div><h3>Programming</h3><p>Python, SQL, C++</p></div>
-        <div><h3>Tools &amp; infrastructure</h3><p>Git, Linux, Docker, Paperspace Gradient, MATLAB</p></div>
-        <div><h3>Data &amp; testing</h3><p>Power BI, Excel, unit / integration / E2E testing</p></div>
+        <div><h3>Machine learning &amp; deep learning</h3><p>CNNs, object detection, PyTorch, TensorFlow, OpenCV, scikit-learn, XGBoost</p></div>
+        <div><h3>Programming</h3><p>Python (NumPy, Pandas), C++, SQL</p></div>
+        <div><h3>Research methods</h3><p>Experimental design, nested cross-validation, statistical testing (Wilcoxon, Friedman/Nemenyi)</p></div>
+        <div><h3>Tools</h3><p>Linux (Ubuntu), Git, Power BI, Excel, Multisim</p></div>
+        <div><h3>Languages</h3><p>Amharic (native), English (C1, TOEFL iBT)</p></div>
       </div>
 
       <h3 class="sub">Leadership &amp; community</h3>
       <ul class="edu">
-        <li><strong>Lead, Google Developer Group on Campus, AASTU</strong> (Oct 2023 – Aug 2024): secured $3,500+ in sponsorships, onboarded 15+ tech companies for recruiting and networking, and ran AASTU Tech Fest for 1,200+ attendees.</li>
+        <li><strong>Lead, Google Developer Student Club, AASTU</strong> (Oct 2023 – Aug 2024): managed a technical community of 1,200+ members and mentored 130+ junior developers in AI fundamentals. I directed AASTU Tech Fest for 1,200+ attendees, secured $3,500+ in sponsorships and onboarded 15+ tech companies for recruiting.</li>
         <li><strong>Rotaract Club</strong>: event organizing, partnership outreach and board responsibilities.</li>
         <li><strong>Math tutor</strong> for school students for more than a year.</li>
       </ul>
