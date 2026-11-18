@@ -1,202 +1,160 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lydia Abraham Firew — Computer Engineering student focused on Data Science, Machine Learning, and Software Development.">
-    <title>Lydia Abraham Firew</title>
-    <link rel="icon" href="logoblack.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navid" style="background-color: rgba(255, 255, 255, 0.8)">
-      <div class="container-fluid">
-        <a class="navbar-brand animated bounceIn slow text-primary" href="#home"><img id="logo" src="logoblack.png" alt="Lydia Abraham logo"/></a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav animated slideInDown">
-            <li class="nav-item p-2 mx-2">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item p-2 mx-2">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item p-2 mx-2">
-              <a class="nav-link" href="#portfolio">Projects</a>
-            </li>
-            <li class="nav-item p-2 mx-2">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item p-2 mx-2">
-              <a class="btn btn-primary rounded-pill px-3 wow pulse" data-wow-iteration="infinite" href="https://drive.google.com/file/d/1Hikt2NoM90ZRm4AWE8D3LHi40MB0wdAz/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div id="home">
-      <div class="row">
-        <div class="column">
-          <div class="my-5">
-            <div class="container text-center">
-              <p class="lead-text" id="home-intro">Welcome! My name is</p>
-              <h1 class="display-3 py-3 fw-bold animated slideInLeft slow hero-heading">Lydia Abraham</h1>
-              <h2 class="display-5 py-3 fw-bold animated slideInLeft slow hero-heading">Computer Engineer</h2>
-              <p class="lead-text" id="home-tagline">I focus on Data Science, Machine Learning, and Back-End Web Development.</p>
-            </div>
-            <div class="mb-4" id="contacts">
-              <p class="lead-text">Reach me out anytime via:</p>
-              <a class="btn btn-outline-light btn-floating m-1" href="mailto:lydiafirew00@gmail.com" role="button" aria-label="Email Lydia"><i class="fa fa-envelope"></i></a>
-              <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/lydiaafirew" role="button" target="_blank" rel="noopener" aria-label="Lydia on X/Twitter"><i class="fa fa-twitter"></i></a>
-              <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/lydiaabrahamfirew/" role="button" target="_blank" rel="noopener" aria-label="Lydia on LinkedIn"><i class="fa fa-linkedin"></i></a>
-              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LydiaAbrahamF" role="button" target="_blank" rel="noopener" aria-label="Lydia on GitHub"><i class="fa fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="column" id="hero-highlights">
-          <ul class="list-unstyled lead-text text-center">
-            <li class="mb-2">🎓 Incoming MSc, Computer Science &amp; Engineering — UAB Barcelona</li>
-            <li class="mb-2">💻 Software Development, Data Analysis &amp; Applied ML</li>
-            <li class="mb-2">📍 Based in Barcelona, Spain</li>
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lydia Abraham — ML Researcher</title>
+  <meta name="description" content="Lydia Abraham — ML researcher working on computer vision, deep learning and federated learning. MSc student at Universitat Autònoma de Barcelona.">
+  <meta property="og:title" content="Lydia Abraham — ML Researcher">
+  <meta property="og:description" content="Computer vision, deep learning and applied ML research. MSc at UAB, Barcelona.">
+  <meta property="og:image" content="profile.jpg">
+  <link rel="icon" href="logoblack.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Lydia Abraham</a>
+      <nav aria-label="Main">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- About Me Section -->
-    <section id="about">
-      <div class="my-5 p-3 wow fadeIn">
-        <h2 class="display-5 wow tada p-2" style="overflow: hidden; font-family: 'Lucida Sans', 'Lucida Sans Regular';">About Me</h2>
-        <div class="row">
-          <div class="column" id="aboutconent">
-            <p class="lead py-2 animated slideInRight slow fs-4">
-              I studied my elementary and high school education at <a href="https://stjohn.edu.et/" target="_blank" rel="noopener">St. John Baptist De La Salle Catholic School</a>. After graduating high school with honors, my passion for physics led me to pursue STEM, joining the Electrical Engineering department at <a href="http://www.aastu.edu.et/" target="_blank" rel="noopener">Addis Ababa Science and Technology University</a>. I am currently a graduating student in Electrical Engineering, specializing in Computer Engineering.
-            </p>
-            <p class="lead wow slideInDown mt-4">
-              Beyond the classroom, I enjoy mentoring others and sharing what I've learned. In high school, I served as President of the Science Club for three consecutive years. After joining university, I became an active member of the Google Developer Student Club, where I worked across several leadership roles to help close the gap between industry requirements and student capabilities.
-            </p>
-            <p class="lead mt-4">
-              Outside of academics, I stay active through workouts, swimming, and cycling, and enjoy continuous learning through books and podcasts on productivity and personal growth.
-            </p>
-          </div>
-          <div class="column" id="aboutpic">
-            <img src="Untitled design (1).png" onmouseover="this.src='profile.jpg';" onmouseout="this.src='Untitled design (1).png';" class="card-img-top img-fluid wow img-fluid text-center animated fadeIn rollIn slow" style="height: 250px; width: 250px; object-fit: cover;" alt="Lydia Abraham portrait" loading="lazy">
-          </div>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">ML Researcher · Barcelona</p>
+        <h1>Lydia Abraham</h1>
+        <p class="lede">I build and evaluate machine learning systems for computer vision, security and health data. I have an electrical engineering background and 2+ years across research and industry. I'm currently doing an MSc at Universitat Autònoma de Barcelona.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="https://drive.google.com/file/d/1Hikt2NoM90ZRm4AWE8D3LHi40MB0wdAz/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+          <a class="btn" href="mailto:lydiafirew00@gmail.com">Email</a>
+          <a class="btn" href="https://github.com/LydiaAbrahamF" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/lydiaabrahamfirew/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <ul class="facts">
+          <li><strong>Now</strong> MSc, Research &amp; Innovation in Computer-based Science and Engineering, UAB</li>
+          <li><strong>Before</strong> Junior Researcher, KFUPM, Saudi Arabia</li>
+          <li><strong>Focus</strong> Computer vision · Deep learning · Federated learning · Time series</li>
+        </ul>
       </div>
+      <figure class="hero-photo">
+        <img src="profile.jpg" alt="Portrait of Lydia Abraham" width="720" height="1280">
+      </figure>
     </section>
 
-    <!-- Experience -->
-    <section id="experience">
-      <div class="my-5 p-3 wow fadeIn">
-        <h2 class="display-5 wow tada p-2" style="overflow: hidden; font-family: 'Lucida Sans', 'Lucida Sans Regular';">Experience</h2>
-        <div class="card-deck row mx-2">
-          <div class="card col-sm-4 align-items-center border-primary border-0 wow slideInLeft" data-wow-delay="0.5s">
-            <img src="logokaldis.jpg" class="my-1 card-img-top img-fluid animated fadeIn" alt="Kaldi's Coffee logo" style="max-width:55%; height: auto; object-fit:cover;" loading="lazy">
-            <div class="card-body">
-              <p class="fw-bold fs-2 text-center">Data Analyst</p>
-              <p class="lead container w-75 text-center">Kaldi's operates more than two dozen coffee shops across Ethiopia. Applied time-series analysis and built KPI dashboards to support business decisions, including identifying seasonal demand patterns that grew a key product line's revenue by nearly 49%.</p>
-            </div>
-          </div>
-          <div class="card col-sm-4 align-items-center border-0 wow slideInLeft">
-            <img src="explogo1.png" class="my-1 img-fluid animated fadeIn" alt="ConsultNation logo" style="max-width:70%; height: auto; object-fit:cover;" loading="lazy">
-            <div class="card-body">
-              <p class="fw-bold fs-2 text-center">Software Quality Assurance</p>
-              <p class="lead container w-75 text-center">Supported a US-based technology company through manual and automated testing, including unit, integration, and end-to-end (E2E) test coverage, plus internal automation for Zoho CRM.</p>
-            </div>
-          </div>
-          <div class="card col-sm-4 align-items-center border-primary border-0 wow slideInLeft" data-wow-delay="0.5s">
-            <img src="explogo4-removebg-preview.png" class="my-1 card-img-top img-fluid animated fadeIn" alt="Forage logo" style="max-width:65%; height: auto; object-fit:cover;" loading="lazy">
-            <div class="card-body">
-              <p class="fw-bold fs-2 text-center">Data Science / Analytics / SWE</p>
-              <p class="lead container w-75 text-center">Completed multiple virtual work-experience programs with companies such as JPMorgan, Accenture, and British Airways, gaining exposure to real-world software engineering and data workflows.</p>
-            </div>
-          </div>
-          <div class="card col-sm-4 align-items-center border-primary border-0 wow slideInLeft" data-wow-delay="0.5s">
-            <img src="logoexp3-removebg-preview.png" class="my-1 card-img-top img-fluid animated fadeIn" alt="Kuraz Technologies logo" style="max-width:30%; height: auto; object-fit:cover;" loading="lazy">
-            <div class="card-body">
-              <p class="fw-bold fs-2 text-center">Back-End Developer Intern</p>
-              <p class="lead container w-75 text-center">Built an e-commerce website using Laravel (PHP), covering backend logic and functionality.</p>
-            </div>
-          </div>
-          <div class="card col-sm-4 align-items-center border-primary border-0 wow slideInLeft" data-wow-delay="0.5s">
-            <img src="ex4logo.png" class="my-1 card-img-top img-fluid animated fadeIn" alt="Awura Computing PLC logo" style="max-width:65%; height: auto; object-fit:cover;" loading="lazy">
-            <div class="card-body">
-              <p class="fw-bold fs-2 text-center">Product Marketing / Data Analytics / Event Marketing</p>
-              <p class="lead container w-75 text-center">Startup environment where I supported operations and reporting for large-scale events, and tracked performance across vendors and event organizers.</p>
-            </div>
-          </div>
-        </div>
+    <section id="research" class="wrap section">
+      <h2>Research &amp; projects</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="tag">Computer vision · Submitted to ACCV 2026</p>
+          <h3>ALT-YOLO: altitude-conditioned small object detection</h3>
+          <p>Maritime search and rescue from UAVs. I evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2. I also proposed altitude-conditioned SAHI inference and glare-aware HSV/CLAHE preprocessing for small targets in open water.</p>
+          <p class="meta">PyTorch · YOLO · SAHI · KFUPM, 2026</p>
+        </article>
+        <article class="card">
+          <p class="tag">Network security · Co-authored paper</p>
+          <h3>Detecting QUIC-based command-and-control traffic</h3>
+          <p>An ML pipeline that pulls flow features out of packet captures with PyShark and benchmarks eight classifiers for spotting C2 traffic hidden in QUIC.</p>
+          <p class="meta">Python · PyShark · scikit-learn · KFUPM, 2026</p>
+        </article>
+        <article class="card">
+          <p class="tag">Medical imaging</p>
+          <h3>LUNA-Analysis: lung nodule classification and localization</h3>
+          <p>A reproducible pipeline on the LUNA dataset that classifies nodules as benign or malignant and localizes them as a secondary task. It comes with documented preprocessing, notebooks, source code and tests.</p>
+          <p class="meta">Python · PyTorch · UAB, 2026</p>
+        </article>
+        <article class="card">
+          <p class="tag">NLP</p>
+          <h3>Hierarchical classification of software requirements</h3>
+          <p>I contributed NLP/ML pipelines that sort software requirements into a hierarchy of classes, running reproducible GPU training experiments.</p>
+          <p class="meta">PyTorch · CUDA · KFUPM, 2026</p>
+        </article>
       </div>
+
+      <details class="earlier">
+        <summary>Earlier projects</summary>
+        <ul>
+          <li><strong>Wall-E</strong>: robotics team project. I owned the computer vision and Raspberry Pi integration and swapped to motion sensors when we couldn't get a depth camera. <a href="https://drive.google.com/file/d/1I7f_pzTKMqTkZBuiLuDIFTKK4ASyjAS-/view?usp=sharing" target="_blank" rel="noopener">Demo</a></li>
+          <li><strong>Kegebrew</strong>: smart logistics for perishable produce, with a cooling unit for transport carts and a platform linking farmers to customers. <a href="https://sites.google.com/view/integrated-engineering-team-32/home?authuser=0" target="_blank" rel="noopener">Project site</a></li>
+          <li><strong>Sacure</strong>: a support chatbot for domestic-violence survivors, built at the African Agility Bootcamp (ML &amp; Data Science track).</li>
+        </ul>
+      </details>
     </section>
 
-    <!-- Projects -->
-    <section id="portfolio">
-      <div class="my-5 p-3 wow fadeIn">
-        <h2 class="display-5 wow tada p-2" style="overflow: hidden; font-family: 'Lucida Sans', 'Lucida Sans Regular';">Projects</h2>
-        <div class="row">
-          <div class="col-md-4 wow slideInRight">
-            <div class="card">
-              <img src="logo.jpg" class="card-img-top" alt="Integrated Engineering Team Project logo" style="height: 300px; object-fit:cover;" loading="lazy">
-              <div class="card-body">
-                <p class="lead card-text">Integrated Engineering Team Project</p>
-                <p>IETP is a semester project addressing at least 3 UN Sustainable Development Goals. Our project, "Kegebrew" (meaning "from the farmer"), focuses on smart logistics for transporting perishable vegetables such as tomatoes. It combines hardware and software: an automatic cooling system that plugs into shipping carts and vehicles, and a software platform connecting farmers directly to customers. Check out our project portfolio <a href="https://sites.google.com/view/integrated-engineering-team-32/home?authuser=0" target="_blank" rel="noopener">here</a>.</p>
-              </div>
-            </div>
+    <section id="experience" class="wrap section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Jan – Aug 2026</div>
+          <div>
+            <h3>Junior Researcher</h3>
+            <p class="org">King Fahd University of Petroleum and Minerals · Dhahran, Saudi Arabia</p>
+            <p>Built ML pipelines for encrypted-traffic detection and requirements classification, and ran reproducible GPU training experiments in PyTorch and CUDA.</p>
           </div>
-          <div class="col-md-4 wow slideInRight" data-wow-delay="0.4s">
-            <div class="card">
-              <img src="walle.jpg" class="card-img-top" alt="Wall-E robotics project" style="height: 300px; object-fit:cover;" loading="lazy">
-              <div class="card-body">
-                <p class="lead card-text">Wall-E</p>
-                <p>Wall-E was a project delivered during our industry internship semester. In a team of five, we each worked on a different aspect of the project. I was responsible for the computer vision and Raspberry Pi integration. Due to financial and equipment constraints (no depth-sensing camera available), we adapted our plan and used sensors for motion and object detection instead. See the final product <a href="https://drive.google.com/file/d/1I7f_pzTKMqTkZBuiLuDIFTKK4ASyjAS-/view?usp=sharing" target="_blank" rel="noopener">here</a>.</p>
-              </div>
-            </div>
+        </li>
+        <li>
+          <div class="when">May 2025 – Jan 2026</div>
+          <div>
+            <h3>Marketing Intelligence Officer</h3>
+            <p class="org">East Africa National Distribution S.C. · Addis Ababa</p>
+            <p>Designed Power BI dashboards for C-level stakeholders and standardized metric definitions and data dictionaries across reporting.</p>
           </div>
-          <div class="col-md-4 wow slideInRight" data-wow-delay="0.7s">
-            <div class="card">
-              <img src="sacure.png" class="card-img-top" alt="Sacure chatbot project" style="max-width:100%; object-fit:cover;" loading="lazy">
-              <div class="card-body">
-                <p class="lead card-text">Sacure</p>
-                <p>From the words "safe" and "secure," Sacure was formulated to signify our project's aim: helping domestic violence victims. Given the high rate of unreported domestic violence, it aims to give victims psychological and legal consultation and encourage reporting. This is the project we built as a team during the African Agility Bootcamp; on the Machine Learning and Data Science track, I was responsible for the chatbot development.</p>
-              </div>
-            </div>
+        </li>
+        <li>
+          <div class="when">Jul 2024 – Apr 2025</div>
+          <div>
+            <h3>Junior Data Analyst</h3>
+            <p class="org">Kaldi's Coffee · Addis Ababa</p>
+            <p>Used time-series demand analysis to find seasonal patterns behind a 48.8% revenue increase in the Ethiopian New Year product line. My process analysis led to an 8.23% cut in production costs.</p>
           </div>
-          <div class="col-md-4 wow slideInRight">
-            <div class="card">
-              <img src="django.jpg" class="card-img-top" alt="Streaming website built with Django" style="height: 300px; object-fit:cover;" loading="lazy">
-              <div class="card-body">
-                <p class="lead card-text">Streaming Website With Django</p>
-                <p>An ongoing project for a Software Engineering course. I implemented system design, requirements gathering, and the design process according to our coursework.</p>
-              </div>
-            </div>
+        </li>
+        <li>
+          <div class="when">Earlier</div>
+          <div>
+            <h3>Software QA, back-end and analytics roles</h3>
+            <p class="org">ConsultNation · Kuraz Technologies · Awura Computing</p>
+            <p>Unit, integration and E2E testing; a Laravel e-commerce back end; and event operations reporting.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
+
+      <h3 class="sub">Education</h3>
+      <ul class="edu">
+        <li><strong>MSc, Research and Innovation in Computer-based Science and Engineering</strong>, Universitat Autònoma de Barcelona, 2026 – present</li>
+        <li><strong>BSc, Electrical Engineering</strong> (Computer Engineering), Addis Ababa Science and Technology University, 2019 – 2024 · CGPA 3.50/4.00</li>
+      </ul>
     </section>
 
-    <footer id="contact" class="bg-primary text-center text-white">
-      <div class="container p-4">
-        <section class="mb-2">
-          <a class="btn btn-outline-light btn-floating m-1" href="mailto:lydiafirew00@gmail.com" role="button" aria-label="Email Lydia"><i class="fa fa-envelope"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/lydiaafirew" role="button" target="_blank" rel="noopener" aria-label="Lydia on X/Twitter"><i class="fa fa-twitter"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/lydiaabrahamfirew/" role="button" target="_blank" rel="noopener" aria-label="Lydia on LinkedIn"><i class="fa fa-linkedin"></i></a>
-          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LydiaAbrahamF" role="button" target="_blank" rel="noopener" aria-label="Lydia on GitHub"><i class="fa fa-github"></i></a>
-        </section>
-        <p class="mb-0 small">&copy; 2026 Lydia Abraham Firew</p>
+    <section id="skills" class="wrap section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>ML &amp; research</h3><p>PyTorch, scikit-learn, NumPy, Pandas, computer vision (YOLO, SAHI), deep learning, federated learning, time-series analysis, RAG</p></div>
+        <div><h3>Programming</h3><p>Python, SQL, C++</p></div>
+        <div><h3>Tools &amp; infrastructure</h3><p>Git, Linux, Docker, CUDA, Paperspace Gradient, MATLAB</p></div>
+        <div><h3>Data &amp; testing</h3><p>Power BI, Excel, unit / integration / E2E testing</p></div>
       </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="wow_min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+      <h3 class="sub">Leadership</h3>
+      <p class="lead-out"><strong>Lead, Google Developer Group on Campus, AASTU</strong> (Oct 2023 – Aug 2024). Secured $3,500+ in sponsorships, onboarded 15+ tech companies for recruiting, and ran AASTU Tech Fest for 1,200+ attendees.</p>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p>I'm open to ML research and engineering roles and internships in Europe.</p>
+      <div class="actions">
+        <a class="btn btn-light" href="mailto:lydiafirew00@gmail.com">lydiafirew00@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lydiaabrahamfirew/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/LydiaAbrahamF" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="small">© 2026 Lydia Abraham</p>
+    </div>
+  </footer>
+</body>
 </html>
