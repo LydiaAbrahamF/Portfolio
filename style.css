@@ -52,8 +52,9 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 .lede { font-size: 1.15rem; color: #2d3742; margin: 0 0 28px; max-width: 38em; }
 .hero-photo { margin: 0; }
 .hero-photo img {
-  width: 100%; aspect-ratio: 4 / 5; height: auto;
-  object-fit: cover; object-position: 50% 30%;
+  width: 100%; aspect-ratio: 1 / 1; height: auto;
+  object-fit: cover; object-position: 50% 20%;
+  background: #fff;
   border-radius: 18px;
   box-shadow: 0 20px 40px -24px rgba(22, 32, 42, 0.45);
 }
@@ -154,7 +155,7 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 }
 
 /* Hero accent */
-.hero-photo { position: relative; }
+.hero-photo { position: relative; max-width: 400px; justify-self: end; width: 100%; }
 .hero-photo::before {
   content: ""; position: absolute; inset: 18px -18px -18px 18px;
   border: 2px solid var(--accent); border-radius: 18px; opacity: 0.25; z-index: -1;
@@ -170,6 +171,7 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
   .stats > div:nth-child(n+3) { border-top: 1px solid var(--line); }
   .hero-photo::before { inset: 12px -12px -12px 12px; }
   .lbl br { display: none; }
+  .hero-photo { max-width: 260px; justify-self: start; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
