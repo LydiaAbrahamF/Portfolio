@@ -185,4 +185,13 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 
 
 
-.card.wide { grid-column: 1 / -1; }
+
+/* Project links */
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0 !important; }
+.links a {
+  font-size: 0.85rem; font-weight: 600; text-decoration: none;
+  padding: 5px 12px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.links a:hover { background: var(--accent); color: #fff; }
+.timeline h3 a { color: inherit; text-decoration-color: rgba(29,92,99,0.35); text-underline-offset: 3px; }
