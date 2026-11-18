@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lydia Abraham - CV
+% Based on the "Medium Length Professional CV" template style
+% Requires resume.cls in the same directory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[a4paper,left=0.5in,top=0.35in,right=0.5in,bottom=0.35in]{geometry}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=[RGB]{29,92,99},linkcolor=[RGB]{29,92,99}}
+
+\name{Lydia Abraham}
+\address{Barcelona, Spain \ $\diamond$ \ Tel: +34 623 368 365 \ $\diamond$ \ \href{mailto:lydiafirew00@gmail.com}{lydiafirew00@gmail.com}}
+\address{\href{https://linkedin.com/in/lydiaabrahamfirew}{linkedin.com/in/lydiaabrahamfirew} \ $\diamond$ \ \href{https://github.com/LydiaAbrahamF}{github.com/LydiaAbrahamF} \ $\diamond$ \ \href{https://lydiaabrahamf.github.io/Portfolio/}{lydiaabrahamf.github.io/Portfolio}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Summary}
+Machine learning researcher focused on computer vision and deep learning, with research experience in UAV object detection and medical image classification, and 1.5 years in industry data roles. MSc student at Universitat Aut\`onoma de Barcelona.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+\begin{rSubsection}{MSc in Research and Innovation in Computer-based Science and Engineering}{09/2026 -- present}{Universitat Aut\`onoma de Barcelona}{Barcelona, Spain}
+\item Courses: Data Analysis; Optimization and Decision Making; Engineering Technology, Innovation and Research
+\end{rSubsection}
+
+\begin{rSubsection}{BSc in Electrical Engineering (Computer Engineering Focus Area)}{09/2019 -- 07/2024}{Addis Ababa Science and Technology University \ | \ CGPA: 3.50 / 4.00}{Addis Ababa, Ethiopia}
+\item Thesis: \textbf{Ethio Virtual Healthcare}, an end-to-end AI clinical decision support platform for rural health officers; CNN models reached 91.3\% mean accuracy across 14 dermatology and ophthalmology classes on a curated dataset of 5,000 images
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Experience}
+
+\begin{rSubsection}{Junior Researcher (Computer Science)}{01/2026 -- 08/2026}{King Fahd University of Petroleum and Minerals}{Dhahran, Saudi Arabia}
+\item \textbf{ALT-YOLO: Altitude-Conditioned Inference for Small Object Detection in Maritime UAV Search and Rescue}
+  (\href{https://drive.google.com/file/d/1JEkD6beCYfyOblq_QpfxwQKzEPLIr-Cl/view?usp=sharing}{paper}, \href{https://github.com/LydiaAbrahamF/alt-yolo-maritime-uav-sar}{code})
+  \begin{itemize}[leftmargin=1.2em,itemsep=0pt,topsep=0pt,label=--]
+  \item Evaluated YOLO26-P2 with maritime-tuned anchors on SeaDronesSee ODv2; proposed altitude-conditioned SAHI inference and an HSV/CLAHE glare-aware preprocessing pipeline
+  \item Designed a per-altitude evaluation protocol that revealed a 23.5-point mAP@50 gap between medium- and high-altitude images, identifying scale variation as the main detection bottleneck
+  \end{itemize}
+\item \textbf{Statistical Fingerprinting for QUIC-Based C2 Detection} (with Shahad Alghamdi; \href{https://drive.google.com/file/d/1rFIabZUrpXU0cM5nXjSSYqE4i4grJCRN/view?usp=sharing}{manuscript under review})
+  \begin{itemize}[leftmargin=1.2em,itemsep=0pt,topsep=0pt,label=--]
+  \item Built a four-VM testbed with two Merlin C2 configurations and a background-noise class; extracted flow-level fingerprints with PyShark using strict time-based splits
+  \item Random Forest and XGBoost reached 94.7--94.8\% accuracy on 4 classes; noise-aware training cut false-positive C2 alerts from 42\% to under 3\% at 96.6--97.8\% recall
+  \end{itemize}
+\item \textbf{Reassessing Ensemble Learning in Software Defect Prediction} (with Haya Alsharef, Tania Sheila; \href{https://drive.google.com/file/d/1sJM1kNMcjUU2p8fZhc8eNdbJNwFsTcp5/view?usp=drive_link}{paper})
+  \begin{itemize}[leftmargin=1.2em,itemsep=0pt,topsep=0pt,label=--]
+  \item Ran a leakage-safe, nested cross-validation study across 10 public datasets; tree-based stacking with a logistic-regression meta-learner gave the best MCC and PR-AUC (Wilcoxon, Friedman/Nemenyi tests)
+  \end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Research Participant, \href{https://drive.google.com/file/d/1LSjzK0bLg10sZQME63zm0SyAg0EIO8bS/view?usp=sharing}{CIDTA Summer School}}{08/2024}{Carnegie Mellon University Africa}{Kigali, Rwanda}
+\item Applied research on extending the post-harvest shelf life of tomatoes, using statistical analysis and structured experimental design
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Experience}
+
+\begin{rSubsection}{Marketing Intelligence Officer}{05/2025 -- 01/2026}{East Africa National Distribution S.C.}{Addis Ababa, Ethiopia}
+\item Designed interactive Power BI dashboards delivering real-time marketing and sales analytics to C-level stakeholders
+\item Formalized metric definitions and data dictionaries, and translated ambiguous business questions into structured analyses that informed strategy
+\end{rSubsection}
+
+\begin{rSubsection}{Junior Data Analyst}{07/2024 -- 04/2025}{Kaldi's Coffee}{Addis Ababa, Ethiopia}
+\item Applied time-series demand analysis to sales and production data, identifying seasonal patterns that contributed to a 48.8\% revenue increase in the Ethiopian New Year product line
+\item Conducted operational efficiency analysis that led to an 8.23\% reduction in production costs through resource optimization
+\item Built KPI dashboards (sales volume, product mix, profitability) in Excel and Power BI
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Machine learning & PyTorch, TensorFlow, CNNs, object detection (YOLO), OpenCV, scikit-learn, XGBoost \\
+Research methods & Experimental design, nested cross-validation, statistical testing (Wilcoxon, Friedman) \\
+Programming & Python (NumPy, Pandas), C++, SQL \\
+Tools \& languages & Git, Linux, Power BI, Excel \ $\diamond$ \ Amharic (native), English (C1, \href{https://drive.google.com/file/d/13P_HhUwt5tHLT-Eakm3vR5bJOGg6kikh/view?usp=sharing}{TOEFL iBT}), Spanish (A1) \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Leadership \& Community}
+
+\begin{rSubsection}{Lead \ $\cdot$ \ Marketing Lead}{11/2022 -- 08/2024}{Google Developer Student Club, AASTU}{Addis Ababa, Ethiopia}
+\item Managed a technical community of 1,200+ members and mentored 130+ junior developers in AI fundamentals
+\item Directed AASTU Tech Fest (1,200+ attendees); secured \$3,500+ in sponsorships and onboarded 15+ tech companies
+\item As Marketing Lead, ran outreach and performance tracking and built partnerships with 15+ organizations
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}
