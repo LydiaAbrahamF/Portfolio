@@ -79,7 +79,7 @@ h1, h2 { font-family: var(--serif); font-weight: 600; }
 .section h2 { font-size: 2rem; margin-bottom: 28px; }
 .sub { font-size: 1.1rem; margin: 40px 0 14px; }
 
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 14px;
   padding: 24px; display: flex; flex-direction: column;
